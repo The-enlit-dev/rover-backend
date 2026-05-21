@@ -1,0 +1,64 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rover",
+      "intents": [
+        {
+          "name": "ChatIntent",
+          "slots": [{"name": "query", "type": "AMAZON.SearchQuery"}],
+          "samples": [
+            "{query}",
+            "tell me {query}",
+            "what is {query}",
+            "explain {query}",
+            "help me with {query}",
+            "can you {query}",
+            "I want to know {query}"
+          ]
+        },
+        {
+          "name": "JokeIntent",
+          "slots": [],
+          "samples": [
+            "tell me a joke",
+            "say something funny",
+            "make me laugh",
+            "motivate me",
+            "give me motivation",
+            "I need motivation",
+            "cheer me up",
+            "inspire me"
+          ]
+        },
+        {
+          "name": "RememberIntent",
+          "slots": [{"name": "query", "type": "AMAZON.SearchQuery"}],
+          "samples": [
+            "remember {query}",
+            "save {query}",
+            "note that {query}",
+            "don't forget {query}",
+            "keep this {query}",
+            "store {query}"
+          ]
+        },
+        {
+          "name": "RecallIntent",
+          "slots": [],
+          "samples": [
+            "what do you remember",
+            "show my notes",
+            "recall",
+            "my saved notes",
+            "what did I save",
+            "read my memory",
+            "show memory"
+          ]
+        },
+        {"name": "AMAZON.HelpIntent",   "samples": []},
+        {"name": "AMAZON.StopIntent",   "samples": []},
+        {"name": "AMAZON.CancelIntent", "samples": []}
+      ]
+    }
+  }
+}
